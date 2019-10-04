@@ -64,6 +64,7 @@ class FlutterLineSdkPlugin(
         @JvmStatic
         fun registerWith(registrar: PluginRegistry.Registrar) {
             val methodChannel = MethodChannel(registrar.messenger(), CHANNEL_NAME)
+            if (registrar.activity() == null) return
             val lineSdkPlugin =
                 FlutterLineSdkPlugin(methodChannel, LineSdkWrapper(registrar.activity()))
             methodChannel.setMethodCallHandler(lineSdkPlugin)
