@@ -114,7 +114,8 @@ To use the package, you need to set up your channel ID. You can do this by calli
 ```diff
 - void main() => runApp(MyApp());
 + void main() {
-+   LineSDK.instance.setup("1620019587").then((_) {
++   WidgetsFlutterBinding.ensureInitialized();
++   LineSDK.instance.setup("${your_channel_id}").then((_) {
 +     print("LineSDK Prepared");
 +   });
 +   runApp(App());
