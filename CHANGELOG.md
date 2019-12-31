@@ -1,3 +1,21 @@
+## 1.2.5
+
+### Fixed
+
+* Remove version specified annotation. Now Android SDK can be built without problem. [#15](https://github.com/line/flutter_line_sdk/pull/15)
+
+## 1.2.4
+
+### Fixed
+
+* A problem that some result in model types are obfuscated when building with Release configuration on Android. [#12](https://github.com/line/flutter_line_sdk/pull/12)
+
+## 1.2.3
+
+### Fixed
+
+* An issue that some classes are stripped unexpectedly when building with release configuration. [#10](https://github.com/line/flutter_line_sdk/issues/10)
+
 ## 1.2.2
 
 ### Fixed

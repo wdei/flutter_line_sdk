@@ -4,7 +4,6 @@ import com.linecorp.flutter_line_sdk.model.UserProfile
 import com.linecorp.linesdk.Scope
 import com.linecorp.linesdk.auth.LineLoginResult
 
-
 data class LoginResultForFlutter(
     val accessToken: AccessToken,
     val scope: String,
